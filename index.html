@@ -61,6 +61,13 @@
       html, body {
         margin: 0;
         padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrollbar */
+      }
+
+      /* Ensure no other elements are adding margin or padding */
+      body > * {
+        margin-top: 0;
+        padding-top: 0;
       }
     </style>
   </head>
