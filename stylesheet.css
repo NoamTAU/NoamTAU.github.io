@@ -104,6 +104,16 @@ td,
 th,
 tr,
 p,
+.image-cell {
+  width: 25%;
+  vertical-align: middle;
+  padding-right: 20px; /* Add space between the image and the details */
+}
+
+.details-cell {
+  width: 75%;
+  vertical-align: middle;
+}
 
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -206,14 +216,4 @@ button {
   padding-bottom: .4em;
 }
 
-.image-cell {
-  width: 25%;
-  vertical-align: middle;
-  padding-right: 20px; /* Add space between the image and the details */
-}
-
-.details-cell {
-  width: 75%;
-  vertical-align: middle;
-}
 
