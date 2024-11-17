@@ -1,123 +1,90 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Personal Website</title>
-    <!-- Link to Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Noam Levi</title>
+    <meta name="author" content="Noam Levi's Homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVYYQHNEK7"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Latin Modern Roman', 'serif'],
-            },
-          },
-        },
-      };
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-MVYYQHNEK7');
     </script>
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    
+    <link rel="icon" type="image/png" href="media/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
-  <body class="bg-black text-white flex flex-col min-h-screen font-sans">
-    <!-- Navbar -->
-    <nav
-      class="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 text-white py-4 sticky top-0 z-50 border-b border-gray-500"
-    >
-      <div class="flex justify-end space-x-4 px-4">
-        <a href="index.html" class="hover:text-green-400">Home</a>
-        <a href="publications.html" class="hover:text-green-400">Publications</a>
-        <a href="blog.html" class="hover:text-green-400">Blog</a>
-      </div>
-    </nav>
 
-    <!-- Main Content Section -->
-    <main class="flex-grow px-4 py-8 md:py-12 max-w-3xl mx-auto">
-      <!-- About Section -->
-      <h2 class="text-2xl md:text-3xl font-semibold mb-4 border-b border-gray-500 pb-2">About</h2>
-      <section id="about" class="flex items-start">
-        <div class="flex-grow">
-          <p class="text-lg md:text-xl leading-relaxed mb-4">
-            I am an AI4Science Postdoctoral Fellow at
-            <a
-              href="https://www.epfl.ch/"
-              target="_blank"
-              class="text-blue-400 hover:text-blue-500"
-              >EPFL</a
-            >. <br />
-            My research focuses on the intersection of theoretical physics and machine learning. 
-            I mostly borrow tools from Random Matrix Theory, Field Theory, and Statistical Physics to study ML algorithms, 
-            building connections with Statistical Learning Theory, Optimization and Dynamics, as well as Representation Learning.
-            Conversely, I'm interested in applying ML to advance the physical sciences.
-          </p>
-          <p class="text-lg md:text-xl font-bold">Previously:</p>
-          <ul class="list-disc pl-6 text-lg md:text-xl leading-relaxed">
-            <li>
-              PhD Student at
-              <a
-                href="https://english.tau.ac.il/"
-                target="_blank"
-                class="text-blue-400 hover:text-blue-500"
-                >Tel Aviv University</a
-              >.
-            </li>
-            <li>
-              Visiting researcher at
-              <a
-                href="https://www.ias.edu/"
-                target="_blank"
-                class="text-blue-400 hover:text-blue-500"
-                >IAS, Princeton</a
-              >.
-            </li>
-          </ul>
-        </div>
-        <img
-          src="media/profile_picture.jpeg"
-          alt="Profile Picture"
-          class="w-48 h-48 rounded-sm ml-4 border border-gray-500"
-        />
-      </section>
-    </main>
+  <body>
+    <table style="width:100%; max-width:800px; border:0; border-spacing:0; margin:auto;">
+      <tbody>
+        <!-- Header Section -->
+        <tr>
+          <td>
+            <table style="width:100%; border:0; border-spacing:0; margin:auto;">
+              <tr>
+                <td style="padding:2.5%; width:60%; vertical-align:middle;">
+                  <p style="text-align:center; font-size:1.5em; font-weight:bold;">Noam Levi</p>
+                  <br>
+                  <p>
+                    I am an AI4Science Postdoctoral Fellow at <a href="https://www.epfl.ch/" target="_blank">EPFL</a>.
+                    My research focuses on the intersection of theoretical physics and machine learning, borrowing tools from Random Matrix Theory, Field Theory, and Statistical Physics to study ML algorithms. I aim to bridge Statistical Learning Theory, Optimization, and Dynamics with Representation Learning, and I’m also interested in applying ML to advance physical sciences.
+                  </p>
+                  <br>
+                  <p><strong>Previously:</strong></p>
+                  <ul>
+                    <li>PhD Student at <a href="https://english.tau.ac.il/" target="_blank">Tel Aviv University</a>.</li>
+                    <li>Visiting researcher at <a href="https://www.ias.edu/" target="_blank">IAS, Princeton</a>.</li>
+                  </ul>
+                  <br>
+                  <p style="text-align:center;">
+                    <a href="mailto:noam.levi@epfl.ch">Email</a> &nbsp;|&nbsp;
+                    <a href="https://github.com/NoamTAU" target="_blank">GitHub</a> &nbsp;|&nbsp;
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=bOrtf9UAAAAJ&sortby=pubdate" target="_blank">Google Scholar</a> &nbsp;|&nbsp;
+                    <a href="https://www.linkedin.com/in/noam-levi-b240035a/" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+                    <a href="media/resume_document.pdf" target="_blank">Resume</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%; width:40%; max-width:40%;">
+                  <img src="media/profile_picture.jpeg" alt="Profile Picture" style="width:100%; max-width:100%;">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-    <!-- Footer Section -->
-    <footer
-      class="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white text-center py-4 border-t border-gray-500"
-    >
-      <p>
-        {name}.{surname}@epfl.ch <br />
-        |
-        <a
-          href="https://github.com/NoamTAU"
-          target="_blank"
-          class="text-blue-400 hover:text-blue-500"
-          >github</a
-        >
-        |
-        <a
-          href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=bOrtf9UAAAAJ&sortby=pubdate"
-          target="_blank"
-          class="text-blue-400 hover:text-blue-500"
-          >scholar</a
-        >
-        |
-        <a
-          href="https://www.linkedin.com/in/noam-levi-b240035a/"
-          target="_blank"
-          class="text-blue-400 hover:text-blue-500"
-          >linkedin</a
-        >
-        |
-        <a
-          href="media/resume_document.pdf"
-          target="_blank"
-          class="text-blue-400 hover:text-blue-500"
-          >resume</a
-        ><br />
-        &copy; 2024 Noam Levi
-      </p>
-    </footer>
+        <!-- Publications Section -->
+        <tr>
+          <td style="padding:20px;">
+            <h2>Publications</h2>
+            <!-- Example Publication -->
+            <div>
+              <p>
+                <a href="https://example-link-to-publication.com">
+                  <strong>Title of the Publication</strong>
+                </a><br>
+                Authors: Noam Levi, et al. <br>
+                <a href="#">BibTeX</a> | <a href="#">ArXiv</a> | <a href="#">Code</a>
+              </p>
+            </div>
+            <!-- Add more publications as needed -->
+          </td>
+        </tr>
+
+        <!-- Footer Section -->
+        <tr>
+          <td>
+            <p style="text-align:center; font-size:small;">
+              This website is based on <a href="https://jonbarron.info/">Jon Barron</a>'s <a href="https://github.com/jonbarron/jonbarron_website">homepage template</a>.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
