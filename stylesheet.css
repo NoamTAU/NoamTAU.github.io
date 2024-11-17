@@ -100,11 +100,21 @@ h1, h2, h3, p, ul, li, span {
   color: white;
 }
 
+.image-cell {
+  width: 25%;
+  vertical-align: middle;
+  padding-right: 20px; /* Add space between the image and the details */
+}
+
+.details-cell {
+  width: 75%;
+  vertical-align: middle;
+}
+
 td,
 th,
 tr,
 p,
-
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -204,16 +214,4 @@ button {
 .conf {
   padding-top: .4em;
   padding-bottom: .4em;
-}
-
-
-.image-cell {
-  width: 25%;
-  vertical-align: middle;
-  padding-right: 20px; /* Add space between the image and the details */
-}
-
-.details-cell {
-  width: 75%;
-  vertical-align: middle;
 }
