@@ -180,3 +180,33 @@ button {
 	padding-top:.4em;
 	padding-bottom:.4em;
 }
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: #1e90ff; /* Choose a readable color for links, such as blue */
+}
+
+a:visited {
+  color: #add8e6; /* Light blue for visited links */
+}
+
+table {
+  background-color: black;
+}
+
+img {
+  border: 1px solid white; /* Optional: add a border to images for better visibility */
+}
+
+hr {
+  border-color: white;
+}
+
+/* Ensure other text elements look good */
+h1, h2, h3, p, ul, li, span {
+  color: white;
+}
