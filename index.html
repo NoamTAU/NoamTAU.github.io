@@ -6,7 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My Personal Website</title>
     <!-- Link to Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<!--     <script src="https://cdn.tailwindcss.com"></script>
+    <script> -->
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Roboto', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
   </head>
   <body class="bg-black text-white flex flex-col min-h-screen">
