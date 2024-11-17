@@ -8,7 +8,6 @@
     <!-- Link to Tailwind CSS and Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -18,58 +17,6 @@
             },
           },
         },
-      };
-
-      // Function to render Markdown content
-      window.onload = function() {
-        var markdownContent = `
-# Publications
-
-## [A Simple Model of Inference Scaling Laws](http://arxiv.org/abs/2410.16377v1)  
-*Noam Levi*. Published on 2024-10-21
-
-## [Grokking at the Edge of Linear Separability](http://arxiv.org/abs/2410.04489v1)  
-*Yohai Bar-Sinai*. Published on 2024-10-06
-
-## [Classifying Overlapping Gaussian Mixtures in High Dimensions: From Optimal Classifiers to Neural Nets](http://arxiv.org/abs/2405.18427v1)  
-*Yaron Oz*. Published on 2024-05-28
-
-## [Decoupled Weight Decay for Any $p$ Norm](http://arxiv.org/abs/2404.10824v2)  
-*Noam Levi*. Published on 2024-04-16
-
-## [Measuring Sharpness in Grokking](http://arxiv.org/abs/2402.08946v1)  
-*Noam Levi*. Published on 2024-02-14
-
-## [The Universal Statistical Structure and Scaling Laws of Chaos and Turbulence](http://arxiv.org/abs/2311.01358v1)  
-*Yaron Oz*. Published on 2023-11-02
-
-## [Grokking in Linear Estimators -- A Solvable Model that Groks without Understanding](http://arxiv.org/abs/2310.16441v1)  
-*Yohai Bar-Sinai*. Published on 2023-10-25
-
-## [The Underlying Scaling Laws and Universal Statistical Structure of Complex Datasets](http://arxiv.org/abs/2306.14975v3)  
-*Yaron Oz*. Published on 2023-06-26
-
-## [Charting the Topography of the Neural Network Landscape with Thermal-Like Noise](https://arxiv.org/abs/2304.01335)  
-*Theo Jules, Gal Brener, Tal Kachman, Noam Levi, Yohai Bar-Sinai*
-
-## [Noise Injection Node Regularization for Robust Learning](http://arxiv.org/abs/2210.15764v1)  
-*Tomer Volansky*. Published on 2022-10-27
-
-## [Noise Injection as a Probe of Deep Learning Dynamics](http://arxiv.org/abs/2210.13599v1)  
-*Tomer Volansky*. Published on 2022-10-24
-
-## [The Supercooling Window at Weak and Strong Coupling](http://arxiv.org/abs/2212.08085v3)  
-*Diego Redigolo*. Published on 2022-12-15
-
-## [Ripples in Spacetime from Broken Supersymmetry](http://arxiv.org/abs/2011.13949v1)  
-*Diego Redigolo*. Published on 2020-11-27
-
-## [Generating Gravitational Waves from Mirror Symmetry Breaking](http://arxiv.org/abs/2003.04900v1)  
-*Diego Redigolo*. Published on 2020-03-10
-        `;
-
-        // Render Markdown to HTML and insert it into the page
-        document.getElementById('markdown-content').innerHTML = marked(markdownContent);
       };
     </script>
   </head>
@@ -88,7 +35,123 @@
     <!-- Main Content Section -->
     <main class="flex-grow px-4 py-8 md:py-12 max-w-3xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-semibold mb-4 border-b border-gray-500 pb-2">Publications</h2>
-      <section id="markdown-content" class="leading-relaxed"></section>
+      <section id="publications" class="leading-relaxed">
+        <ul class="list-none pl-0">
+          <!-- Publication Items -->
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2410.16377v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>A Simple Model of Inference Scaling Laws</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Noam Levi*. Published on 2024-10-21</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2410.04489v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Grokking at the Edge of Linear Separability</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Yohai Bar-Sinai*. Published on 2024-10-06</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2405.18427v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Classifying Overlapping Gaussian Mixtures in High Dimensions: From Optimal Classifiers to Neural Nets</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Yaron Oz*. Published on 2024-05-28</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2404.10824v2" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Decoupled Weight Decay for Any $p$ Norm</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Noam Levi*. Published on 2024-04-16</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2402.08946v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Measuring Sharpness in Grokking</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Noam Levi*. Published on 2024-02-14</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2311.01358v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>The Universal Statistical Structure and Scaling Laws of Chaos and Turbulence</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Yaron Oz*. Published on 2023-11-02</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2310.16441v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Grokking in Linear Estimators -- A Solvable Model that Groks without Understanding</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Yohai Bar-Sinai*. Published on 2023-10-25</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2306.14975v3" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>The Underlying Scaling Laws and Universal Statistical Structure of Complex Datasets</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Yaron Oz*. Published on 2023-06-26</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="https://arxiv.org/abs/2304.01335" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Charting the Topography of the Neural Network Landscape with Thermal-Like Noise</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Theo Jules, Gal Brener, Tal Kachman, Noam Levi, Yohai Bar-Sinai*</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2210.15764v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Noise Injection Node Regularization for Robust Learning</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Tomer Volansky*. Published on 2022-10-27</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2210.13599v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Noise Injection as a Probe of Deep Learning Dynamics</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Tomer Volansky*. Published on 2022-10-24</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2212.08085v3" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>The Supercooling Window at Weak and Strong Coupling</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Diego Redigolo*. Published on 2022-12-15</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2011.13949v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Ripples in Spacetime from Broken Supersymmetry</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Diego Redigolo*. Published on 2020-11-27</p>
+          </li>
+          <li class="mb-6">
+            <p class="font-medium text-gray-800">
+              <a href="http://arxiv.org/abs/2003.04900v1" target="_blank" class="text-blue-500 hover:text-blue-600">
+                <em>Generating Gravitational Waves from Mirror Symmetry Breaking</em>
+              </a>
+            </p>
+            <p class="text-gray-600">*Diego Redigolo*. Published on 2020-03-10</p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <!-- Footer -->
